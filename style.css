@@ -124,7 +124,7 @@ header {
   text-decoration: none;
 }
 .open .sp_nav .bkb_pic {
-  background: url(images/bkb0.jpg) center / cover;
+  background: url("https://github.com/weunit616/bike_kawasaki_bike/blob/main/bkb0.jpg?raw=true") center / cover;
   width: 100%;
   height: 160px;
   display: block;
