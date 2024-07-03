@@ -209,7 +209,7 @@ main .col1 .bkbb_pic {
   height: 350px;
 }
 main .col1 .bkbk_pic {
-  background: url(images/bkb2.jpg) center / cover;
+  background: url("https://github.com/weunit616/bike_kawasaki_bike/blob/main/bkb2.jpg?raw=true") center / cover;
   width: 100%;
   height: 350px;
 }
