@@ -1,0 +1,260 @@
+body {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+
+
+/* ページトップボタン */
+.page_top_btn {
+  position: fixed;
+  bottom: 20px;
+  right: 220px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #000;
+  color: #fff;
+  padding: 7px 20px 11px;
+  border-radius: 10px;
+}
+
+
+
+/* ヘッダー */
+header {
+  inset: 0;
+  max-width: calc(100% - 20px);
+  height: 100px;
+  background-color: #FD0000;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+.inner {
+  width: 1170px;
+  max-width: calc(100% - 40px);
+  margin: 0 auto;
+}
+#nav_wrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  position: relative;
+}
+#nav_wrapper .title_pc {
+  font-size: 32px;
+  font-weight: 800;
+  padding: 12px 46px;
+  color: #FFF100;
+}
+#nav_wrapper .title_sp {
+  display: none;
+}
+#nav_wrapper .hamburger {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 35px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 300;
+}
+#nav_wrapper .hamburger_line {
+  position: absolute;
+  right: 0;
+  width: 35px;
+  height: 4px;
+  background-color: #000;
+  transition: all 0.3s;
+}
+.hamburger_line1 {
+  top: 1px;
+}
+.hamburger_line2 {
+  top: 13px;
+}
+.hamburger_line3 {
+  top: 25px;
+}
+
+
+/* クリック */
+.open .hamburger_line1 {
+  transform: rotate(-45deg);
+  top: 10px;
+}
+.open .hamburger_line2 {
+  opacity: 0;
+}
+.open .hamburger_line3 {
+  transform: rotate(45deg);
+  top: 10px;
+}
+
+
+/* sp_nav */
+.sp_nav {
+  position: fixed;
+  right: -100%;
+
+  top: 0;
+  width: 36%;
+  height: 100vh;
+  background-color: #FFF100;
+  transition: all 0.3s;
+  z-index: 200;
+  overflow-y: auto;
+}
+
+.open .sp_nav {
+  right: 0;
+  padding: 20px 30px;
+}
+
+.sp_nav li {
+  list-style: none;
+}
+.sp_nav li + li {
+  margin-top: 18px;
+}
+.sp_nav li a {
+  color: #FD0000;
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.open .sp_nav .bkb_pic {
+  background: url(images/bkb0.jpg) center / cover;
+  width: 100%;
+  height: 160px;
+  display: block;
+  margin: 70px 0 30px;
+}
+.open .sp_nav .text1 {
+  font-size: 40px;
+  font-weight: 900;
+  font-family: "Playwrite MX", cursive;
+  color: #FD0000;
+}
+
+
+/* 解除用 */
+.black_bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
+  background-color: #000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.open .black_bg {
+  opacity: 0.8;
+  visibility: visible;
+}
+
+
+@media (max-width: 768px) {
+  header .inner .title_pc {
+    display: none;
+  }
+  header .inner .title_sp {
+    display: block;
+    font-size: 28px;
+  font-weight: 700;
+  padding: 12px 18px;
+  color: #FFF100;
+  }
+}
+
+
+
+/* メイン */
+main {
+  padding: 150px 0 50px;
+}
+main .row {
+  display: flex;
+  padding: 0 0 0 80px;
+}
+main .row + .row {
+  margin-top: 30px;
+}
+main .col1 {
+  width: 25%;
+  border: #FD0000 20px solid;
+  position: relative;
+}
+main .col1::after {
+  content: '';
+  border-top: transparent 50px solid;
+  border-bottom: transparent 50px solid;
+  border-left: #FD0000 50px solid;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  right: -50px;
+  
+}
+main .col1 .bkbb_pic {
+  background: url(images/bkb1.jpg) center / cover;
+  width: 100%;
+  height: 350px;
+}
+main .col1 .bkbk_pic {
+  background: url(images/bkb2.jpg) center / cover;
+  width: 100%;
+  height: 350px;
+}
+main .col2 {
+  width: 75%;
+  padding: 30px 30px 30px 80px;
+
+}
+main .col2_txt {
+  display: flex;
+  align-items: center;
+  line-height: 200px;
+}
+main .col2 h2 {
+  font-size: 300px;
+  font-weight: 900;
+  position: relative;
+  bottom: -100px;
+}
+main .col2 .text1 {
+  font-size: 36px;
+  font-weight: 700;
+  position: relative;
+  bottom: -200px;
+  padding-left: 70px;
+  letter-spacing: 0.5em;
+}
+
+/* フッター */
+footer {
+  padding: 60px 0 50px;
+  text-align: center;
+  
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+}
+footer li {
+  list-style: none;
+}
+footer li + li {
+  margin-left: 20px;
+}
+footer li a {
+  display: block;
+  color: #FD0000;
+}
