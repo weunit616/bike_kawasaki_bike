@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100..400&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/ae145c44c8.js" crossorigin="anonymous"></script>
+
+  <title>hmb bkb</title>
+</head>
+
+<body>
+  <a href="#page_top" class="page_top_btn">page top</a>
+
+  <div id="page_top">
+
+  <header class="inner">
+    <div id="nav_wrapper" class="nav_wrapper">
+      <h1 class="title_pc">バイク川崎バイク (BKB)</h1>
+      <h2 class="title_sp">BKB</h2>
+      <div class="hamburger" id="js_hmb">
+        <span class="hamburger_line hamburger_line1"></span>
+        <span class="hamburger_line hamburger_line2"></span>
+        <span class="hamburger_line hamburger_line3"></span>
+      </div>
+      <nav class="sp_nav">
+        <ul>
+          <li><a href="">Top</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Service</a></li>
+        </ul>
+        <div class="bkb_pic"></div>
+        <p class="text1">
+          Bin to
+        </p>
+        <p class="text1">
+          Kan no
+        </p>
+        <p class="text1">
+          Bunbetsu suru
+        </p>
+      </nav>
+    <div class="black_bg" id="js_black_bg"></div>
+    </div>
+  </header>
+
+  <main class="inner">
+    <div class="row">
+      <div class="col1">
+        <div class="bkbb_pic"></div>
+      </div>
+      <div class="col2">
+        <div class="col2_txt">
+          <h2>B</h2>
+          <p class="text1">
+            べっぴんさんの
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col1">
+        <div class="bkbk_pic"></div>
+      </div>
+      <div class="col2">
+        <div class="col2_txt">
+          <h2>K</h2>
+          <p class="text1">
+            客
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col1">
+        <div class="bkbb_pic"></div>
+      </div>
+      <div class="col2">
+        <div class="col2_txt">
+          <h2>B</h2>
+          <p class="text1">
+            ばっかり
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <ul>
+      <li>
+        <a href="">
+          <i class="fa-brands fa-square-x-twitter" style="font-size: 50px;"></i>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <i class="fa-brands fa-square-instagram" style="font-size: 50px;"></i>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <i class="fa-brands fa-wikipedia-w" style="font-size: 50px;"></i>
+        </a>
+      </li>
+    </ul>
+  </footer>
+  <script>
+
+    var nav = document.getElementById('nav_wrapper');
+    var hamburger = document.getElementById('js_hmb');
+    var blackBg = document.getElementById('js_black_bg');
+
+    hamburger.addEventListener('click', function () {
+    nav.classList.toggle('open');
+    });
+
+    blackBg.addEventListener('click', function () {
+    nav.classList.remove('open');
+    });
+
+  </script>
+  </div>
+</body>
+</html>
